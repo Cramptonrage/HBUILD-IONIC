@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-searchbar animated mode="ios"></ion-searchbar>
+</ion-header>
+<ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)" mode="md" color="primary">
+    <ion-segment-button value="personas">
+      <ion-label>Personas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="publicaciones">
+      <ion-label>Publicaciones</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content fullscreen>
+  <div *ngIf="tab == 'personas'">
+    <app-personas></app-personas>
+  </div>
+  <div *ngIf="tab == 'publicaciones'">
+    <app-inicio></app-inicio>
+  </div>
+</ion-content>

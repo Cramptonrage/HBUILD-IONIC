@@ -1,0 +1,34 @@
+
+
+.titulo{
+    margin: 8px;
+    
+    font-weight: bold;
+    font-size: 20px;
+}
+.descripcion {
+    padding-left: 8px;
+    padding-bottom: 5px;
+}
+
+.edit-img{
+    margin-top: 15px;
+    position: relative;
+
+     &::before{
+         position: absolute;
+         content: '';
+         width: 100%;
+         height: 100%;
+         background-color: rgba($color: #eaeaea, $alpha: 0.7);
+     }
+
+     .edit{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: #8b8b8b;
+         font-size: 100px;
+     }
+}
